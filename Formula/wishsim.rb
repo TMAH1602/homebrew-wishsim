@@ -1,16 +1,16 @@
 class Wishsim < Formula
   desc "Cinematic terminal wish simulator with animated reveals"
   homepage "https://github.com/TMAH1602/WishSim"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/TMAH1602/WishSim/releases/download/v0.3.1/wishsim-macos-arm64.tar.gz"
-      sha256 "c9b13fa0443c0017fca2612e7925e74a312f6b9f1563c0f5b78ab7b028d1ca51"
+      url "https://github.com/TMAH1602/WishSim/releases/download/v0.4.0/wishsim-macos-arm64.tar.gz"
+      sha256 "ccd46f9ef73e86fddb91988cad8a1f4b91ab2314b28467e0eda1b882911ec318"
     else
-      url "https://github.com/TMAH1602/WishSim/releases/download/v0.3.1/wishsim-macos-x86_64.tar.gz"
-      sha256 "974954bb580ad0365d06d51ca9580c7cec5bd2079515f00785ff12f11c74cc29"
+      url "https://github.com/TMAH1602/WishSim/releases/download/v0.4.0/wishsim-macos-x86_64.tar.gz"
+      sha256 "60c8aa3222da9d478dbb82f899a8cae65da860ddb362a128e3fce8af33bab671"
     end
   end
 
@@ -20,7 +20,9 @@ class Wishsim < Formula
 
   def caveats
     <<~EOS
-      Run WishSim directly in Kitty or Ghostty for full-resolution character artwork.
+      Ghostty is WishSim's primary supported terminal emulator and is recommended
+      for full-resolution artwork. Kitty is also supported; other terminals use
+      the portable ANSI renderer.
       Terminal multiplexers such as Zellij may block the graphics protocol.
     EOS
   end
