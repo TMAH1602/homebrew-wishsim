@@ -1,16 +1,16 @@
 class Wishsim < Formula
   desc "Cinematic terminal wish simulator with animated reveals"
   homepage "https://github.com/TMAH1602/WishSim"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/TMAH1602/WishSim/releases/download/v0.6.0/wishsim-macos-arm64.tar.gz"
-      sha256 "ab39eb535e441607755e33b074c990245042131e2455141b83495e0125b4fb65"
+      url "https://github.com/TMAH1602/WishSim/releases/download/v0.6.1/wishsim-macos-arm64.tar.gz"
+      sha256 "0ac1c136fe32c696a205ed9cc41044d6c7073ec1abfd42fde1885fce9ad7f5fb"
     else
-      url "https://github.com/TMAH1602/WishSim/releases/download/v0.6.0/wishsim-macos-x86_64.tar.gz"
-      sha256 "52ce54b2bb78100ddceb843802ebd2a128d235c59c3bad8d10c7d1b4257454ce"
+      url "https://github.com/TMAH1602/WishSim/releases/download/v0.6.1/wishsim-macos-x86_64.tar.gz"
+      sha256 "a08103892a31f7eccd5f778cbe7466f7ecbba8f6426f5dda42677b5a8f319b62"
     end
   end
 
